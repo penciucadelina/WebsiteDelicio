@@ -1,0 +1,331 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6f4f0, #eae7e1);
+    color: #3a3a3a;
+    line-height: 1.9;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('images/header-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: none;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+    nav a {
+        margin: 0 1em;
+        padding: 0.75em 1.5em;
+        text-decoration: none;
+        color: #3a3a3a;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.4s ease;
+    }
+
+        nav a:hover {
+            background: #d4af37;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+.container {
+    max-width: 1200px;
+    margin: 4em auto;
+    padding: 3em;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 5em 2em;
+}
+
+    section h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        color: #4a5b67;
+        position: relative;
+    }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: #d4af37;
+            margin: 0.75em auto 0;
+            border-radius: 10px;
+        }
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+    .carousel img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.s ease;
+    }
+
+        .carousel img:hover {
+            transform: scale(1.05);
+        }
+
+.carousel {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+    .carousel img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+#rezervari form {
+    display: grid;
+    gap: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#rezervari input,
+#rezervari textarea {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+    #rezervari input[type="submit"] {
+        background: #d4af37;
+        color: #fff;
+        padding: 1em 2em;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        #rezervari input[type="submit"]:hover {
+            background: #b9952f;
+            transform: translateY(-3px);
+        }
+
+.menu-item {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 3em;
+    align-items: center;
+}
+
+    .menu-item img {
+        width: 250px;
+        height: 180px;
+        border-radius: 15px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item div {
+        flex: 1;
+    }
+
+    .menu-item h3 {
+        font-size: 2em;
+        color: #3a3a3a;
+    }
+
+    .menu-item .price {
+        font-size: 1.5em;
+        color: #d4af37;
+        font-weight: bold;
+        margin-top: 0.5em;
+    }
+
+    .menu-item p {
+        margin-top: 1em;
+        color: #555;
+        line-height: 1.6;
+    }
+
+footer {
+    background: #4a5b67;
+    color: #fff;
+    padding: 3em 1em;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 5em;
+}
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 800px; 
+    height: 450px; 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media (max-width: 768px) {
+  
+    #map {
+        max-width: 100%; 
+        height: 300px;
+    }
+
+
+    header h1 {
+        font-size: 2.5rem; 
+    }
+
+    header p {
+        font-size: 1.2rem; 
+    }
+
+    nav {
+        padding: 1em 0; 
+        text-align: center;
+    }
+
+        nav a {
+            font-size: 1rem; 
+            margin: 0.5em 0; 
+            display: block; 
+            padding: 0.75em 1em; 
+        }
+
+
+    .carousel {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+        .carousel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+    .container {
+        margin: 2em auto; 
+        padding: 2em;
+    }
+
+    section h2 {
+        font-size: 2.5rem; 
+    }
+
+ 
+    #rezervari form {
+        padding: 1em;
+    }
+
+    footer {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+        .menu-item img {
+            width: 100%; 
+            height: auto; 
+            margin-bottom: 1em; 
+        }
+
+        .menu-item div {
+            width: 100%; 
+        }
+
+        .menu-item h3 {
+            font-size: 1.5em; 
+        }
+
+        .menu-item .price {
+            font-size: 1.2em;
+        }
+}
+@media (max-width: 768px) {
+    nav {
+        position: relative; 
+    }
+}

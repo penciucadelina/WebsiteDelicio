@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicio - Acasă</title>
+    <meta name="description" content="Delicio - Restaurantul tău preferat din Cluj-Napoca. Savurați preparate delicioase într-o atmosferă plăcută.">
+    <meta name="keywords" content="restaurant, Cluj-Napoca, mâncare delicioasă, rezervări, contact">
+    <meta name="author" content="Delicio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+    <div class="header-content">
+        <h1>Delicio</h1>
+        <p>Bine ați venit la Delicio!</p>
+    </div>
+</header>
+
+<div class="carousel">
+    <div><img src="images/restaurant1.jpg"></div>
+    <div><img src="images/restaurant2.jpg"></div>
+    <div><img src="images/restaurant3.jpg"></div>
+</div>
+    </header>
+
+    <nav>
+        <a href="menu.html" class="button">Meniu</a>
+        <a href="contact.html" class="button">Contact</a>
+        <a href="rezervari.html" class="button">Rezervări</a>
+    </nav>
+
+    <div class="container">
+        <section id="welcome">
+            <h2>Descoperiți gusturile noastre!</h2>
+            <p>            La Delicio, ne mândrim cu preparatele noastre delicioase și atmosfera plăcută. Vizitați-ne pentru o experiență culinară de neuitat!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Delicio. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+</html>
