@@ -4,3 +4,5 @@ Developed a responsive and visually appealing restaurant website using HTML and 
 
 ## Technologies used:
 HTML5, CSS3, Responsive Web Design.
+
+## URL: https://delicio-restaurant.netlify.app/
